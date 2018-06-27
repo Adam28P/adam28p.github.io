@@ -1,8 +1,16 @@
+body{
+    width:960px;
+    margin:0 auto;
+    background-color:#999;
+
+}
 h1{
     font-size: 200%;
-    margin: 50px;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    margin-top: 40px;
     font-weight: bold;
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 p{

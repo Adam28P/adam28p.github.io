@@ -24,6 +24,9 @@ a, a:hover, a:focus {
     transition: all 0.3s;
 }
 
+.active{
+    font-weight:bold !important;
+}
 #sidebar .sidebar-header {
     padding: 20px;
     background: #fafafa;
@@ -51,10 +54,6 @@ a, a:hover, a:focus {
     background: #eee;
 }
 
-#sidebar ul li.active > a, a[aria-expanded="true"] {
-    /* color: #fff; */
-    /* background: #6d7fcc; */
-}
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;

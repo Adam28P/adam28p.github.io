@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
 
 body {
-    background: #fafafa;
+    background-color: #fafafa;
     line-height:1.5;
     font-family: 'Cabin', sans-serif;
+    background-image: url(../images/tiny_grid.png);
 }
 
 p {

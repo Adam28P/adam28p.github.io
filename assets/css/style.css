@@ -36,10 +36,6 @@ a, a:hover, a:focus {
     border-bottom: 1px solid #ddd;
 }
 
-#sidebar ul.components {
-    /* border-bottom: 1px solid #47748b; */
-}
-
 #sidebar ul p {
     color: #fff;
     padding: 10px;
@@ -167,12 +163,20 @@ a[data-toggle="collapse"] {
     border-left:#333 5px solid;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     #sidebar {
         width: 100%;
         position: absolute;
         max-width:none;
         text-align: center;
     }
-}
+} */
 
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}

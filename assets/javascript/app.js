@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $("#sidebar").mCustomScrollbar({
-         theme: "minimal"
+        theme: "minimal"
     });
 
     $('#sidebarCollapse').on('click', function () {
@@ -12,9 +12,15 @@ $(document).ready(function () {
         // and also adjust aria-expanded attributes we use for the open/closed arrows
         // in our CSS
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+
+        if($('.list-unstyled').css('display') == 'none'){
+            $(".list-unstyled").css("display", "block");
+        }else{
+            $(".list-unstyled").css("display", "none");
+        }
     });
 
-    $('#red').on('click', function(){
+    $('#red').on('click', function () {
         $('#red').removeClass('inactive');
         $('#red').addClass('active');
         $('#orange').addClass('inactive');
@@ -31,7 +37,7 @@ $(document).ready(function () {
         $('#violet').removeClass('active');
     });
 
-    $('#orange').on('click', function(){
+    $('#orange').on('click', function () {
         $('#orange').removeClass('inactive');
         $('#orange').addClass('active');
         $('#red').addClass('inactive');
@@ -48,7 +54,7 @@ $(document).ready(function () {
         $('#violet').removeClass('active');
     });
 
-    $('#yellow').on('click', function(){
+    $('#yellow').on('click', function () {
         $('#yellow').removeClass('inactive');
         $('#yellow').addClass('active');
         $('#orange').addClass('inactive');
@@ -65,7 +71,7 @@ $(document).ready(function () {
         $('#violet').removeClass('active');
     });
 
-    $('#green').on('click', function(){
+    $('#green').on('click', function () {
         $('#green').removeClass('inactive');
         $('#green').addClass('active');
         $('#orange').addClass('inactive');
@@ -82,7 +88,7 @@ $(document).ready(function () {
         $('#violet').removeClass('active');
     });
 
-    $('#blue').on('click', function(){
+    $('#blue').on('click', function () {
         $('#blue').removeClass('inactive');
         $('#blue').addClass('active');
         $('#orange').addClass('inactive');
@@ -99,7 +105,7 @@ $(document).ready(function () {
         $('#violet').removeClass('active');
     });
 
-    $('#indigo').on('click', function(){
+    $('#indigo').on('click', function () {
         $('#indigo').removeClass('inactive');
         $('#indigo').addClass('active');
         $('#orange').addClass('inactive');
@@ -116,7 +122,7 @@ $(document).ready(function () {
         $('#violet').removeClass('active');
     });
 
-    $('#violet').on('click', function(){
+    $('#violet').on('click', function () {
         $('#violet').removeClass('inactive');
         $('#violet').addClass('active');
         $('#orange').addClass('inactive');
@@ -133,5 +139,5 @@ $(document).ready(function () {
         $('#red').removeClass('active');
     });
 
-   
+
 });

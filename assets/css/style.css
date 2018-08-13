@@ -84,7 +84,7 @@ wrapper {
 }
 
 #sidebar.active {
-    margin-left: -250px;
+    /* margin-left: 250px; */
 }
 
 #sidebar {
@@ -172,11 +172,32 @@ a[data-toggle="collapse"] {
     }
 } */
 
+#sidebarCollapse{
+    display:none;
+}
+
+.list-unstyled {
+    /* margin-left: -1000px; */
+    display: block;
+}
+
 @media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
+    .list-unstyled {
+        /* margin-left: -1000px; */
+        display: none;
     }
+
+    #sidebarCollapse{
+        display:block;
+    }
+    
     #sidebar.active {
         margin-left: 0;
+    } 
+    #sidebar {
+        width: 100%;
+        position: absolute;
+        max-width:none;
+        text-align: center;
     }
 }
